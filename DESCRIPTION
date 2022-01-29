@@ -1,4 +1,4 @@
-Package: techr
+Package: erce
 Type: Package
 Title: An `R` wrapper to dowload ERCE 2019 data and few functions
 Version: 0.1.0
