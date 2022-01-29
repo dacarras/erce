@@ -1,11 +1,12 @@
-Package: erce
+Package: techr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: An `R` wrapper to dowload ERCE 2019 data and few functions
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: dacarras
+Maintainer: The package maintainer <dacarras@uc.cl>
+Description: Different functions to aid the use of ERCE 2019 data
+Imports: dplyr, tidyr, haven, tibble, purrr, labelled, stringr, tidyverse
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.1.1
