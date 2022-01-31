@@ -5,13 +5,12 @@
 #' de escuelas, siguiendo un diseño estratificado, y luego selección
 #' de salas de clases intactas.
 #'
-#' La presente base de datos incluye los valores plausibles de las pruebas
-#' Lectura, Matemáticas y Ciencias, además de las respuestas al
-#' cestionario de estudiantes.
+#' La presente base de datos incluye las respuestas al cuestionario de
+#' habilidades socioemocionales.
 #'
 #' @docType data
 #'
-#' @usage data(erce_2019_qa6)
+#' @usage data(erce_2019_hse)
 #'
 #' @format Objeto clase \code{"cross"}; ver \code{\link[qtl]{read.cross}}.
 #'
@@ -23,6 +22,6 @@
 #' @source https://es.unesco.org/fieldoffice/santiago/llece/ERCE2019
 #'
 #' @examples
-#' data(erce_2019_qa6)
-#' labelled::look_for(erce_2019_qa6) # mostrar variables
-"erce_2019_qa6"
+#' data(erce_2019_hse)
+#' labelled::look_for(erce_2019_hse) # mostrar variables
+"erce_2019_hse"

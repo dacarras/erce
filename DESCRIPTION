@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: dacarras
 Maintainer: The package maintainer <dacarras@uc.cl>
 Description: Different functions to aid the use of ERCE 2019 data
-Imports: dplyr, tidyr, haven, tibble, purrr, labelled, stringr, tidyverse, openxlsx
+Imports: dplyr, tidyr, haven, tibble, purrr, labelled, stringr, tidyverse, openxlsx, srvyr, survey
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
