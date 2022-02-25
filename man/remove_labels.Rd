@@ -17,7 +17,8 @@ remove_labels() from a data frame
 }
 \examples{
 library(dplyr)
-data_without_labels <- data_frame \%>\%
+library(erce)
+data_without_labels <- erce::erce_2019_hse \%>\%
                        remove_labels()
 
 
