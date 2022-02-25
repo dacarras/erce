@@ -14,11 +14,23 @@
 # function
 combine_reg <- function(mi_estimates) {
 
+
+  # require libraries
   require(dplyr)
   require(mitools)
 
-  mi_results <- mitools::MIcombine(mi_estimates)
-  summary    <- summary(mi_results)
+  # function to avoid text output from mitools
+  quiet <- function(x) {
+    sink(tempfile())
+    on.exit(sink())
+    invisible(force(x))
+  }
+
+  # get cpmbined estimates and summary
+  mi_results <- quiet(mitools::MIcombine(mi_estimates))
+  summary    <- quiet(summary(mi_results))
+
+  # create tidy table
   tidy_results <- summary %>%
     tibble::rownames_to_column("term") %>%
     dplyr::rename(e = results,
@@ -39,8 +51,9 @@ combine_reg <- function(mi_estimates) {
     dplyr::select(term, e, se, p_val, lo, hi) %>%
     tibble::as_tibble()
 
+  # give output
   return(tidy_results)
 
   # Source: https://github.com/wepelham3/sack2/blob/master/R/tidy_MIcombine.R
-
 }
+
