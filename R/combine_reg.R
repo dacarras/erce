@@ -17,7 +17,7 @@ combine_reg <- function(mi_estimates) {
   require(dplyr)
   require(mitools)
 
-  mi_results <- mitools::MIcombine(results)
+  mi_results <- mitools::MIcombine(mi_estimates)
   summary    <- summary(mi_results)
   tidy_results <- summary %>%
     tibble::rownames_to_column("term") %>%
