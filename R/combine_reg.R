@@ -12,7 +12,7 @@
 #'
 #' @export
 # function
-combine_log <- function(mi_estimates) {
+combine_reg <- function(mi_estimates) {
 
 
   # require libraries
