@@ -3,8 +3,8 @@
 
 -   libreria generada para el taller de análisis de datos de ERCE 2019,
     Taller II
--   este taller fue conducido de forma remota entre entr los días Marzo
-    02 y 03 de 2022
+-   este taller fue conducido de forma remota entre los días Marzo 02 y
+    03 de 2022
 -   esta libreria facilita el proceso de acceder a los datos del estudio
     ERCE 2019
 -   además contiene funciones auxiliares para facilitar el proceso de
@@ -19,6 +19,8 @@
     plausibles, en modelos de regresión lineal
 -   `combine_log()` combina las estimaciones realizadas sobre valores
     plausibles, en modelos de regresión logística
+-   `c_mean()` genera medias de grupos. Función empleada para realizar
+    centrados de variables.
 
 # instalacion (modo privado)
 
