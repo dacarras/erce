@@ -3,4 +3,6 @@
 export(c_mean)
 export(combine_log)
 export(combine_reg)
+export(lsa_weights)
 export(remove_labels)
+export(senate_weights)
