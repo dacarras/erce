@@ -28,14 +28,10 @@
     muestra para modelos multinivel, guardando el resultado en variables
     `wa1`, `wa2`, `wb1` y `wb2`.
 
-# instalacion (modo privado)
-
-You can install, in R, the development version of r4sda from this
-[github](https://github.com/dacarras/r4sda) repository with:
+# instalacion
 
 ``` r
 devtools::install_github(
   'dacarras/erce',
-  auth_token = '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',
   force = TRUE)
 ```
