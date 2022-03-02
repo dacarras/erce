@@ -16,6 +16,7 @@
 #' library(dplyr)
 #' data_frame_with_weights <- erce::erce_2019_qa6 %>%
 #'                            erce::remove_labels() %>%
+#'                            mutate(id_k = as.numeric(as.factor(paste0(IDCNTRY)))) %>%
 #'                            mutate(id_s = as.numeric(as.factor(paste0(IDCNTRY, "_", STRATA)))) %>%
 #'                            mutate(id_j = as.numeric(as.factor(paste0(IDCNTRY, "_", IDSCHOOL)))) %>%
 #'                            mutate(id_i = seq(1:nrow(.))) %>%
@@ -23,9 +24,9 @@
 #'                            id_i = 'id_i',
 #'                            id_j = 'id_j',
 #'                            id_k = 'id_k',
-#'                            wt = 'wt',
-#'                            wi = 'wi',
-#'                            wj = 'wj' )
+#'                            wt = 'WT',
+#'                            wi = 'WI',
+#'                            wj = 'WJ' )
 #' @export
 lsa_weights <- function(data, id_i, id_j, id_k, wt, wi, wj){
 
