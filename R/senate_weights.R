@@ -19,7 +19,7 @@
 #'                            mutate(id_i = seq(1:nrow(.))) %>%
 #'                            # remove original senate weight variable 'ws'
 #'                            dplyr::select(-ws) %>%
-#'                            r4sda::senate_weights(.,
+#'                            erce::senate_weights(.,
 #'                            scale = 1000,
 #'                            wt = 'wt',
 #'                            id_k = 'id_k')
