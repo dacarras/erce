@@ -21,6 +21,14 @@
     plausibles, en modelos de regresión logística
 -   `c_mean()` genera medias de grupos. Función empleada para realizar
     centrados de variables.
+-   `c_median()` genera medianas de grupos. Función empleada para crear
+    variables agregadas.
+-   `c_sd()` genera desviaciones de grupos. Función empleada para crear
+    variables agregadas.
+-   `c_sum()` genera sumas de grupos. Función empleada para crear
+    variables agregadas.
+-   `c_wmean()` genera medias pesadas de grupos. Función empleada para
+    crear variables agregadas.
 -   `senate_weights()` calcula senate weights o pesos normalizados a una
     constante (e.g., 1000, 500 u otra constante seleccionada), y los
     agrega a los datos originales en una variable llamada `ws`
