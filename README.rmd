@@ -22,6 +22,10 @@ output: github_document
 - `senate_weights()` calcula senate weights o pesos normalizados a una constante (e.g., 1000, 500 u otra constante seleccionada), y los agrega a los datos originales en una variable llamada `ws`
 - `lsa_weights()` calcula pesos normalizados y pesos efectivos a la muestra para modelos multinivel, guardando el resultado en variables `wa1`, `wa2`, `wb1` y `wb2`.
 
+# datos
+
+- datos de cuestionaros
+- datos de pruebas
 
 # instalacion
 

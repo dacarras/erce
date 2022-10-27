@@ -36,6 +36,11 @@
     muestra para modelos multinivel, guardando el resultado en variables
     `wa1`, `wa2`, `wb1` y `wb2`.
 
+# datos
+
+-   datos de cuestionaros
+-   datos de pruebas
+
 # instalacion
 
 ``` r
