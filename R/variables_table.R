@@ -16,6 +16,11 @@ variables_table <- function(d){
   require(purrr)
   require(stringr)
 
+  # aux function
+  char_location <- function(string,char){
+    stringr::str_locate(string, char)[, 1]
+  }
+
   ## get main objects
   var_structure <- capture.output(dplyr::glimpse(d))
   text_lines    <- var_structure[-(1:2)]
